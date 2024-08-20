@@ -13,6 +13,7 @@ fn main() {
             let _ = dbg!(std::fs::remove_dir(path));
             count += 1;
         }
+
         println!("Found {count}");
         std::thread::sleep(std::time::Duration::from_secs(5));
     }
